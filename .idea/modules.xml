@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/complete.iml" filepath="$PROJECT_DIR$/complete.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/complete_main.iml" filepath="$PROJECT_DIR$/.idea/modules/complete_main.iml" group="complete" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/complete_test.iml" filepath="$PROJECT_DIR$/.idea/modules/complete_test.iml" group="complete" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bwhere-travel.iml" filepath="$PROJECT_DIR$/.idea/modules/bwhere-travel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bwhere-travel_main.iml" filepath="$PROJECT_DIR$/.idea/modules/bwhere-travel_main.iml" group="bwhere-travel" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bwhere-travel_test.iml" filepath="$PROJECT_DIR$/.idea/modules/bwhere-travel_test.iml" group="bwhere-travel" />
     </modules>
   </component>
 </project>
