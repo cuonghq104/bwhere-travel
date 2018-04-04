@@ -143,7 +143,8 @@ public class LocationDAO {
 
         String sql = "SELECT travel_place.id, travel_place.name, travel_place.icon, travel_place.zoom, travel_category.icon, travel_category.name_vi, travel_place.latitude, travel_place.longitude, travel_category.id\n" +
                 "FROM travel_place\n" +
-                "LEFT JOIN travel_category ON travel_category.id = travel_place.category";
+                "LEFT JOIN travel_category ON travel_category.id = travel_place.category " +
+                "WHERE travel_place.verifyAdmin IS NOT NULL";
 
         ArrayList<Location> locations = new ArrayList<>();
         try {
