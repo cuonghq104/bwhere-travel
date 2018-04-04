@@ -141,7 +141,7 @@ public class LocationDAO {
 
         Connection con = DatabaseConnector.getInstance();
 
-        String sql = "SELECT travel_place.id, travel_place.name, travel_place.icon, travel_place.zoom, travel_place.icon, travel_category.name_vi, travel_place.latitude, travel_place.longitude\n" +
+        String sql = "SELECT travel_place.id, travel_place.name, travel_place.icon, travel_place.zoom, travel_category.icon, travel_category.name_vi, travel_place.latitude, travel_place.longitude, travel_category.id\n" +
                 "FROM travel_place\n" +
                 "LEFT JOIN travel_category ON travel_category.id = travel_place.category";
 
@@ -161,11 +161,13 @@ public class LocationDAO {
                     String locationTypeName = rs.getString(6);
                     double latitude = rs.getDouble(7);
                     double longitude = rs.getDouble(8);
+                    String locationTypeId = rs.getString(9);
                     //
 
                     LocationType locationType = (LocationType) TravelFactory.create(TravelFactory.TYPE);
                     locationType.setNameVie(locationTypeName);
-                    locationType.setImage(Constant.LOCATION_TYPE_ICON_URL_PREFIX + locationTypeImage + Constant.LOCATION_ICON_EXT);
+                    locationType.setImage(locationTypeImage);
+                    locationType.setId(locationTypeId);
                     //
 
                     Location location = (Location) TravelFactory.create(TravelFactory.LOCATION);
