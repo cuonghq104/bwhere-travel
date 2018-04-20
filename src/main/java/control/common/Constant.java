@@ -19,4 +19,5 @@ public class Constant {
     public static final String API_JOURNEY_DETAIL = "/journey/detail";
 
     public static final String API_LOCATION_TYPE = "/locationType";
+    public static final String API_GET_LOCATION_BY_USER = "/location/user";
 }

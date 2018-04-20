@@ -13,6 +13,11 @@ public class DatabaseConnector {
     private static String username = "b8f424d93bf6a2";
     private static String password = "193e1b25";
 
+//    private static String dbUrl = "jdbc:mysql://localhost:3306/bwhere?";
+//    private static String unicode = "useSSL=false&autoReconnect=true&useUnicode=yes&characterEncoding=UTF-8";
+//    private static String username = "root";
+//    private static String password = "";
+
     private static Connection instance;
 
     public static Connection getInstance() {

@@ -33,6 +33,9 @@ public class Location implements Serializable{
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String description;
 
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private String status;
+
     public String getId() {
         return id;
     }
@@ -105,4 +108,11 @@ public class Location implements Serializable{
         this.thumbnails = thumbnails;
     }
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }
